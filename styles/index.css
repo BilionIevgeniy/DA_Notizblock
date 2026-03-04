@@ -1,0 +1,26 @@
+@import url('./reset.css');
+:root {
+  --primary-color: #f0f0f0;
+  --secondary-color: #333333;
+}
+
+/* General */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Main */
+main {
+  flex: 1;
+}
