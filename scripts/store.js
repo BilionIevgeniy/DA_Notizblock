@@ -51,11 +51,11 @@ export function applyAction(action, idx) {
 }
 
 export function saveToLocalStorage() {
-  localStorage.setItem("notizblock_state", JSON.stringify(state));
+  localStorage.setItem("state", JSON.stringify(state));
 }
 
 export function getFromLocalStorage() {
-  const lsState = JSON.parse(localStorage.getItem("notizblock_state"));
+  const lsState = JSON.parse(localStorage.getItem("state"));
   if (lsState) {
     Object.assign(state, lsState);
   }
