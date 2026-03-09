@@ -44,7 +44,7 @@ const BUTTON_CONFIG = {
 };
 
 function generateNotionTemplate(item, idx, buttons) {
-  return `
+  return /*html*/ `
     <div class="notion-wrapper">
       <p>${item}</p>
       <button data-idx="${idx}" data-name="${buttons[0].name}" data-action="${buttons[0].action}" class="${buttons[0].className}">${buttons[0].content}</button>
